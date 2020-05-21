@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <script type="text/javascript" src="jqprac.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="bg-light mt-3 py-1">TODOリスト</h2>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="inputName" class="">タスク</label>
+                    <input type="text" class="form-control" id="inputTask" placeholder="">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="inputLimit" class="">期限</label>
+                    <input type="text" class="form-control" id="inputLimit" placeholder="">
+                </div>
+            </div>
+            <input type="button" id="btnAdd" class="btn btn-primary mb-3" value="追加">
+        </form>
+
+        <div class="alert alert-warning" role="alert" id="divAlert">
+            <span id="inputAlert"></span>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover" id="todoList">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>タスク内容</th>
+                        <th>期限</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- jQueryで作成する -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.ja.min.js"></script>
+    <script src="js/todo.js"></script>
+</body>
+</html>
